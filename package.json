@@ -1,0 +1,30 @@
+{
+  "name": "Play Learning ++",
+  "version": "1.0.0",
+  "description": "Api do Jogo PlayLearning ++ que contém todo o back-end por trás do jogo. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrenoLopez/PlayLearning.git"
+  },
+  "keywords": [
+    "Nodejs",
+    "Reactjs",
+    "aplicação_web"
+  ],
+  "author": "Breno Lopes de Souza, Greison Jackson dos Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrenoLopez/PlayLearning/issues"
+  },
+  "homepage": "https://github.com/BrenoLopez/PlayLearning#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "consign": "^0.1.6",
+    "express": "^4.16.4",
+    "express-validator": "^5.3.1"
+  }
+}
