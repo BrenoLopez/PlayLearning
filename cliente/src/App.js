@@ -1,11 +1,11 @@
   import React, { Component } from 'react';
 
-  import paginaInicial from '.././Components/paginaInicial';
+  import BotaoIniciar from './Components/BotaoIniciar';
 
   class App extends Component {
     render() {
       return (
-            <paginaInicial/>
+            <BotaoIniciar/>
 
       );
     }
