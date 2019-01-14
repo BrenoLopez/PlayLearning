@@ -2,13 +2,14 @@
   import {BrowserRouter, Route,Switch} from 'react-router-dom';
   //componentes que direcionaram para as rotas
   import PaginaInicial from './../Components/Home/PaginaInicial';
-  import Niveis from './../Components/Jogo/Niveis';
+  import Niveis from '../Components/Jogo/Niveis/Niveis';
+
   const Routes = () => {
     return(
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component= {PaginaInicial}/>
-          <Route path="/niveis/:nivel" component={Niveis}/>
+          <Route path="/niveis" component={Niveis}/>
         </Switch>
       </BrowserRouter>
     );
