@@ -11,22 +11,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cliente/src/Components/Jogo/Exercicio/Exercicio.js">
+        <entry file="file://$PROJECT_DIR$/cliente/src/Components/Home/PaginaInicial.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="311">
+              <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
               <folding>
-                <element signature="e#4#43#0" expanded="true" />
+                <element signature="e#4#30#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cliente/src/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="43" selection-start-column="43" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -36,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -61,19 +52,20 @@
         <option value="$PROJECT_DIR$/cliente/src/Components/Pagina-inicial.js" />
         <option value="$PROJECT_DIR$/cliente/.gitignore" />
         <option value="$PROJECT_DIR$/cliente/src/Components/Jogo/Niveis.js" />
-        <option value="$PROJECT_DIR$/cliente/src/Components/Home/style-pagina-inicial.css" />
         <option value="$PROJECT_DIR$/cliente/src/style.css" />
-        <option value="$PROJECT_DIR$/cliente/src/Components/Home/PaginaInicial.js" />
         <option value="$PROJECT_DIR$/cliente/src/App.js" />
         <option value="$PROJECT_DIR$/cliente/src/Components/Home/Icone.js" />
         <option value="$PROJECT_DIR$/cliente/src/index.js" />
         <option value="$PROJECT_DIR$/cliente/src/Components/Jogo/Niveis/style.css" />
         <option value="$PROJECT_DIR$/cliente/src/Components/Jogo/Niveis/Niveis.js" />
         <option value="$PROJECT_DIR$/cliente/public/index.html" />
-        <option value="$PROJECT_DIR$/cliente/src/Routes/routes.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/cliente/src/Components/Jogo/Exercicio/style.css" />
         <option value="$PROJECT_DIR$/cliente/src/Components/Jogo/Exercicio/Exercicio.js" />
+        <option value="$PROJECT_DIR$/cliente/teste.js" />
+        <option value="$PROJECT_DIR$/cliente/src/Routes/routes.js" />
+        <option value="$PROJECT_DIR$/cliente/src/Components/Home/style-pagina-inicial.css" />
+        <option value="$PROJECT_DIR$/cliente/src/Components/Home/PaginaInicial.js" />
       </list>
     </option>
   </component>
@@ -122,6 +114,23 @@
               <item name="cliente" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Components" type="462c0819:PsiDirectoryNode" />
+              <item name="Home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PlayLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PlayLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="cliente" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
+              <item name="Home" type="462c0819:PsiDirectoryNode" />
+              <item name="imgs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PlayLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PlayLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="cliente" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
               <item name="Jogo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -132,6 +141,15 @@
               <item name="Components" type="462c0819:PsiDirectoryNode" />
               <item name="Jogo" type="462c0819:PsiDirectoryNode" />
               <item name="Exercicio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PlayLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PlayLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="cliente" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
+              <item name="Jogo" type="462c0819:PsiDirectoryNode" />
+              <item name="Niveis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PlayLearning" type="b2602c69:ProjectViewProjectNode" />
@@ -158,6 +176,9 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2018.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PlayLearning++\PlayLearning\cliente\src\Components\Home\imgs" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\PlayLearning++\PlayLearning\cliente\src\Components\Home" />
       <recent name="D:\PlayLearning++\PlayLearning\cliente\src\Components\Jogo\Niveis" />
@@ -197,17 +218,18 @@
       <workItem from="1547466995661" duration="15542000" />
       <workItem from="1547506790723" duration="655000" />
       <workItem from="1547599679263" duration="3163000" />
+      <workItem from="1547657226742" duration="5339000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50836000" />
+    <option name="totallyTimeSpent" value="56175000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27987897" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28441754" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -256,16 +278,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cliente/src/Components/Home/imgs/background-inicial.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cliente/src/Components/Home/style-pagina-inicial.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cliente/node_modules/reactstrap/lib/Row.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-502" />
@@ -293,38 +305,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cliente/src/Components/Home/PaginaInicial.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#4#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cliente/public/manifest.json" />
     <entry file="file://$PROJECT_DIR$/cliente/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
           <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cliente/src/Components/Jogo/Niveis/Niveis.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cliente/src/Routes/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
-          <caret column="26" selection-start-column="26" selection-end-column="26" />
-          <folding>
-            <element signature="e#142#205#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -359,13 +344,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cliente/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="43" selection-start-column="43" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cliente/src/Components/Jogo/Exercicio/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -373,12 +351,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cliente/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="43" selection-start-column="43" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente/teste.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente/src/Routes/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding>
+            <element signature="e#2#28#0" expanded="true" />
+            <element signature="e#142#205#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente/src/Components/Home/imgs/background-inicial.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente/src/Components/Jogo/Niveis/Niveis.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cliente/src/Components/Jogo/Exercicio/Exercicio.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="351">
+          <caret line="28" column="55" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
           <folding>
             <element signature="e#4#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente/src/Components/Home/style-pagina-inicial.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente/src/Components/Home/PaginaInicial.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+          <folding>
+            <element signature="e#4#30#0" expanded="true" />
           </folding>
         </state>
       </provider>

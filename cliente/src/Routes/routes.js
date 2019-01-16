@@ -4,7 +4,8 @@
   import PaginaInicial from './../Components/Home/PaginaInicial';
   import Niveis from '../Components/Jogo/Niveis/Niveis';
   import Exercicio from '../Components/Jogo/Exercicio/Exercicio';
-  const Routes = () => {
+
+   const Routes = () => {
     return(
       <BrowserRouter>
         <Switch>

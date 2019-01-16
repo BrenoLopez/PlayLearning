@@ -6,13 +6,9 @@
 
     class  Exercicio extends Component{
 
-        constructor (props){
-            super(props);
-            this.State = {
 
-            }
-        }
-        render(){
+
+            render(){
 
             return(
                 <div className="container">
@@ -30,7 +26,7 @@
                                 <Table.Cell>
 
                                     <Button basic color='blue'>
-                                        int
+                                       dado vindo do bd
                                     </Button>
 
                                     <Button basic color='blue'>

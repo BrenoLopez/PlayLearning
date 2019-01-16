@@ -1,24 +1,34 @@
     import React from 'react';
     import {Button} from 'reactstrap';
-    import background from './imgs/background-inicial.jpg';
+    import Background from './imgs/background-inicial.jpg';
     import './style-pagina-inicial.css';
-    import {Link} from "react-router-dom";
+
+
+
 
     const imagem_fundo = {
-        backgroundImage: `url(${background})`,
-        backgroundPosition: "center center"
+        backgroundImage: `url(${Background})`,
+        backgroundRepeat  : 'no-repeat',
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        display : 'block',
+        margin: '0',
+        padding: '0',
     };
 
-    const PaginaInicial = props => {
+    const Paper =()=>{
+      return (
+            <Paper style={imagem_fundo}/>
+      );
+    };
+
+    const PaginaInicial =()=> {
 
         return(
-
-          <div style={imagem_fundo}>
-            <div  className="text-center botaoIniciar ">
-                <Link to="/niveis"> <Button color="primary">Iniciar</Button></Link>
+            <div>
+          <Paper/>
+              <Button color="primary" tag="a" href="/niveis" className="botaoIniciar">Iniciar</Button>
             </div>
-          </div>
-
         );
     };
 

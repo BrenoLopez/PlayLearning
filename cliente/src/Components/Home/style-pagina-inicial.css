@@ -1,9 +1,7 @@
-.botaoIniciar{
-    margin-top: 260px;
-    margin-bottom: 260px;
+    .botaoIniciar{
+        margin-top: 311px;
+        margin-bottom: 311px;
+        margin-left: 50%;
 
-}
 
-.background{
-    background-image: url("/imgs/background-inicial.jpg");
-}
+    }
