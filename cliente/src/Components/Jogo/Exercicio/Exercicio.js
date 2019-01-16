@@ -27,17 +27,42 @@
 
                         <Table.Body>
                             <Table.Row>
-                                <Table.Cell>Aqui vai botões com as possiveis respostas</Table.Cell>
+                                <Table.Cell>
+
+                                    <Button basic color='blue'>
+                                        int
+                                    </Button>
+
+                                    <Button basic color='blue'>
+                                        variavel
+                                    </Button>
+
+                                    <Button basic color='blue'>
+                                        =
+                                    </Button>
+
+                                    <Button basic color='blue'>
+                                        10
+                                    </Button>
+
+                                    <Button basic color='blue'>
+                                        ;
+                                    </Button>
+
+                                </Table.Cell>
                             </Table.Row>
+
                             <Table.Row>
-                                <div>
+                                <div className="text-center espacamentoBottom">
                                 <Button color='green' onClick={() =>{
                                     console.log( "Resposta correta");
                                 }}>
                                     Validar Resposta
                                 </Button>
+
                                 </div>
                             </Table.Row>
+
                         </Table.Body>
                     </Table>
                 </div>
