@@ -1,7 +1,26 @@
-    .botaoIniciar{
-        margin-top: 311px;
-        margin-bottom: 311px;
-        margin-left: 50%;
+    .botaoIniciar {
+        font-size: 16pt;
+        height: 45px;
+        width: 150px;
+        position: absolute;
+        left: 45%;
+        top: 80%;
+    }
 
+    .backgroundHome{
+        background-image: url("imgs/background-inicial.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        
 
+    }
+
+    .logoHome{
+        position: absolute;
+        width: 270px;
+        height: 195px;
+        left: 43%;
+        top: 50%;
     }

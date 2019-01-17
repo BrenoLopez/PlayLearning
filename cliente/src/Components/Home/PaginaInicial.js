@@ -1,33 +1,16 @@
     import React from 'react';
-    import {Button} from 'reactstrap';
-    import Background from './imgs/background-inicial.jpg';
+
+    import {Button} from "semantic-ui-react";
     import './style-pagina-inicial.css';
+    import Logo from './imgs/logo-jogo.jpeg';
 
 
-
-
-    const imagem_fundo = {
-        backgroundImage: `url(${Background})`,
-        backgroundRepeat  : 'no-repeat',
-        backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        display : 'block',
-        margin: '0',
-        padding: '0',
-    };
-
-    const Paper =()=>{
-      return (
-            <Paper style={imagem_fundo}/>
-      );
-    };
-
-    const PaginaInicial =()=> {
+    const PaginaInicial = () => {
 
         return(
-            <div>
-          <Paper/>
-              <Button color="primary" tag="a" href="/niveis" className="botaoIniciar">Iniciar</Button>
+            <div className="backgroundHome">
+                <img src={Logo} alt="" className="logoHome"></img>
+                <Button circular  color="teal" tag="a" href="/niveis" className=" botaoIniciar">Iniciar</Button>
             </div>
         );
     };
