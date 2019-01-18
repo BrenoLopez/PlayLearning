@@ -1,0 +1,1 @@
+    //recuperar dados de exercicios e passar para rota exercicios
