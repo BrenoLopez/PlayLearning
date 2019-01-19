@@ -11,9 +11,9 @@
               <h3 className="text-center espacamentoTop">Niveis de dificuldade</h3>
                 <Link to="/" ><Icon name="arrow circle left" size="big" color="black"/></Link>
                <ListGroup className="espacamentoTop">
-                <ListGroupItem tag="a" href="/niveis/basico" action>Exercicios de nivel Básico (buscar do bd)</ListGroupItem>
-                <ListGroupItem tag="a" href="/niveis/medio" action>Exercicios de nivel médio</ListGroupItem>
-                <ListGroupItem tag="a" href="/niveis/avancado" action>Exercicios de nivel avançado</ListGroupItem>
+                <ListGroupItem tag="a" href="/listagemExercicios/basico" action>Exercicios de nivel Básico</ListGroupItem>
+                <ListGroupItem tag="a" href="/listagemExercicios/medio" action>Exercicios de nivel médio</ListGroupItem>
+                <ListGroupItem tag="a" href="/listagemExercicios/avancado" action>Exercicios de nivel avançado</ListGroupItem>
               </ListGroup>
 
             </div>
