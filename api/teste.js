@@ -27,7 +27,7 @@
         if (err) return console.error(err);
         console.log(authors);
     });
-    bognar.save(function (err,resultado) {
+    bognar.save(function (err) {
         if (err) {
             console.log(err);
         }
