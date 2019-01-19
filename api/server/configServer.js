@@ -3,6 +3,9 @@
     const consign = require('consign');
     const app = express();
 
+
+
+
     app.use(function(req,res,next){
         //configuração para que a aplicação tenha um res para uma request padrao do navegador antes da requisição verdadeira
         res.setHeader("Access-Control-Allow-Origin","*"); // "*" habilita que a api vai fornecer uma resposta para qualquer aplicação de qualquer dominio
@@ -12,11 +15,12 @@
         next();
     });
     app.use(bodyParser.urlencoded({extended: true}));
+
     consign()
-        .include('./../rotas')
-        .then('./../models')
-        .then('./../controllers')
-        .then('./../config/conexaoBd.js')
-        .into(app);
+          .include('./../rotas')
+          .then('./../config/conexaoBd.js')
+          .then('./../controllers')
+          .into(app);
+
 
     module.exports = app;
