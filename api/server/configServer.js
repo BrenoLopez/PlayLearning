@@ -18,6 +18,7 @@
 
     consign()
           .include('./../rotas')
+          .then('./../config/conexaoBd.js')
           .into(app);
 
 

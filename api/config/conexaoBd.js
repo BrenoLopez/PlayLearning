@@ -1,5 +1,9 @@
     const mongoose = require ('mongoose');
 
-    let url = 'mongodb://localhost:27017/PlayLearn';
+   const conexao = mongoose.connect('mongodb://localhost:27017/playlearn', { useNewUrlParser: true });
 
-    mongoose.connect(url);
+    if(conexao){
+        console.log("conexao efetuada com sucesso!");
+    }
+
+    module.exports = conexao;
