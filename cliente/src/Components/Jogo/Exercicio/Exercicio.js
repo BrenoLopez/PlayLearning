@@ -15,7 +15,7 @@
             };
 
             axios
-                .get('http://localhost:3001/exercicios/')
+                .get('http://localhost:3001/exerciciosid/')
                 .then(resultadoRequisicao => {
                     console.log(resultadoRequisicao.data.pergunta);
                     console.log(resultadoRequisicao.data.respostas);
