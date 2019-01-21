@@ -6,6 +6,8 @@
 
 
 
+
+
     class  Exercicio extends Component {
 
         state = {
@@ -18,11 +20,21 @@
             axios
                 .get(`http://localhost:3001/exercicioid/${params.numeroId}`)
                 .then(resultado => {
-                    console.log(resultado.data[0].instrucao);
+                   // console.log(resultado.data[0].instrucao);
                     this.setState({instrucao: resultado.data[0].instrucao});
 
                 });
+
+            axios
+                .get(`http://localhost:3001/respostasid/${params.numeroId}`)
+                .then(resultado => {
+                    console.log(resultado.data[0].respostas);
+                    this.setState(
+                        {respostas: resultado.data[0].respostas});
+
+                });
         }
+
         render() {
 
             return (
@@ -40,10 +52,14 @@
                         <Table.Body>
                             <Table.Row>
                                 <Table.Cell>
-                                    <Button basic color='blue'>
-                                        {this.state.respostas}
-                                    </Button>
 
+                                    {
+
+                                        this.state.respostas.map(resultado =>
+                                            <Button basic color='blue' name={resultado.resposta}>{resultado.resposta.toString()}</Button>
+
+                                        )
+                                    }
                                 </Table.Cell>
                             </Table.Row>
 
@@ -61,6 +77,7 @@
 
                         </Table.Body>
                     </Table>
+
                 </div>
             );
         }

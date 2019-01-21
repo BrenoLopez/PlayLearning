@@ -1,6 +1,3 @@
-const mongoose= require ('mongoose');
-
-
 const ExerciciosNivel = require('./../models/exerciciosModel');
 
 

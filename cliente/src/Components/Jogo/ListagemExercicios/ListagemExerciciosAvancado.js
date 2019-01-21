@@ -30,8 +30,11 @@
                     <ListGroup className="espacamentoTop">
                         {
                             this.state.exercicios.map(exercicios =>
-                            <ListGroupItem tag="a" href= {"/exercicio/"+ exercicios.numeroId} action >{exercicios.numeroId}</ListGroupItem>
-                        )}
+                            <ListGroupItem tag="a" href= {"/exercicio/"+ exercicios.numeroId} action >
+                                {exercicios.numeroId}
+                            </ListGroupItem>
+                        )
+                        }
 
                     </ListGroup>
 
