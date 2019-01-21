@@ -15,7 +15,7 @@
             };
 
             axios
-                .get('http://localhost:3001/exercicios/?nivel=1')
+                .get('http://localhost:3001/exercicios/')
                 .then(resultadoRequisicao => {
                     console.log(resultadoRequisicao.data.pergunta);
                     console.log(resultadoRequisicao.data.respostas);
