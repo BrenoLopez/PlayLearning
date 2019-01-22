@@ -24,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cliente/src/Components/Jogo/Exercicio/Exercicio.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="31" column="34" lean-forward="true" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+            <state relative-caret-position="142">
+              <caret line="61" column="94" selection-start-line="61" selection-start-column="94" selection-end-line="61" selection-end-column="94" />
               <folding>
                 <element signature="e#4#43#0" expanded="true" />
               </folding>
@@ -36,20 +36,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/rotas/respostasNumeroId.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cliente/src/Components/Home/PaginaInicial.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="34" column="6" lean-forward="true" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cliente/src/Components/Jogo/ListagemExercicios/ListagemExerciciosBasico.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="32" column="76" lean-forward="true" selection-start-line="32" selection-start-column="76" selection-end-line="32" selection-end-column="76" />
+            <state relative-caret-position="306">
+              <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+              <folding>
+                <element signature="e#4#30#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,7 +83,6 @@
         <option value="$PROJECT_DIR$/cliente/teste.js" />
         <option value="$PROJECT_DIR$/cliente/src/Components/Home/BackgroundInicial.js" />
         <option value="$PROJECT_DIR$/cliente/src/Components/Home/style-pagina-inicial.css" />
-        <option value="$PROJECT_DIR$/cliente/src/Components/Home/PaginaInicial.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/api/rotas/rotas.js" />
         <option value="$PROJECT_DIR$/api/controllers/controllers.js" />
@@ -117,11 +110,12 @@
         <option value="$PROJECT_DIR$/api/rotas/exerciciosNivel.js" />
         <option value="$PROJECT_DIR$/api/rotas/exerciciosNumeroId.js" />
         <option value="$PROJECT_DIR$/api/models/exerciciosModel.js" />
-        <option value="$PROJECT_DIR$/api/models/respostasModel.js" />
         <option value="$PROJECT_DIR$/cliente/src/Components/Jogo/ListagemExercicios/ListagemExerciciosBasico.js" />
         <option value="$PROJECT_DIR$/cliente/src/Components/Jogo/ListagemExercicios/ListagemExerciciosAvancado.js" />
         <option value="$PROJECT_DIR$/api/rotas/respostasNumeroId.js" />
+        <option value="$PROJECT_DIR$/api/models/respostasModel.js" />
         <option value="$PROJECT_DIR$/cliente/src/Components/Jogo/Exercicio/Exercicio.js" />
+        <option value="$PROJECT_DIR$/cliente/src/Components/Home/PaginaInicial.js" />
       </list>
     </option>
   </component>
@@ -138,6 +132,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -192,6 +187,14 @@
               <item name="cliente" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Components" type="462c0819:PsiDirectoryNode" />
+              <item name="Home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PlayLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PlayLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="cliente" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
               <item name="Jogo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -216,7 +219,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -280,18 +282,19 @@
       <workItem from="1547814829962" duration="19775000" />
       <workItem from="1547862713078" duration="1658000" />
       <workItem from="1547896035600" duration="12027000" />
-      <workItem from="1547944891082" duration="40833000" />
+      <workItem from="1547944891082" duration="40885000" />
+      <workItem from="1548122003785" duration="4478000" />
+      <workItem from="1548189028329" duration="677000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="159678000" />
+    <option name="totallyTimeSpent" value="164885000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18835099" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19440243" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -372,16 +375,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="25" selection-start-column="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cliente/src/Components/Home/PaginaInicial.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-          <folding>
-            <element signature="e#4#30#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -485,13 +478,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/inserirDocuments.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/api/inserirDocuments.js" />
     <entry file="file://$PROJECT_DIR$/api/node_modules/mongoose/lib/query.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -574,31 +561,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/models/respostasModel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        <state relative-caret-position="34">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente/src/Components/Jogo/ListagemExercicios/ListagemExerciciosBasico.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="32" column="76" selection-start-line="32" selection-start-column="76" selection-end-line="32" selection-end-column="76" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/rotas/respostasNumeroId.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="34" column="6" lean-forward="true" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cliente/src/Components/Jogo/ListagemExercicios/ListagemExerciciosBasico.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="32" column="76" lean-forward="true" selection-start-line="32" selection-start-column="76" selection-end-line="32" selection-end-column="76" />
+          <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cliente/src/Components/Jogo/Exercicio/Exercicio.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="31" column="34" lean-forward="true" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+        <state relative-caret-position="142">
+          <caret line="61" column="94" selection-start-line="61" selection-start-column="94" selection-end-line="61" selection-end-column="94" />
           <folding>
             <element signature="e#4#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente/src/Components/Home/PaginaInicial.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding>
+            <element signature="e#4#30#0" expanded="true" />
           </folding>
         </state>
       </provider>

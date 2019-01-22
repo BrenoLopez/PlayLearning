@@ -6,8 +6,6 @@
 
 
 
-
-
     class  Exercicio extends Component {
 
         state = {
@@ -15,6 +13,8 @@
             respostas: []
 
         };
+
+
         componentDidMount(){
             const { match: { params } } = this.props;
             axios
@@ -28,7 +28,7 @@
             axios
                 .get(`http://localhost:3001/respostasid/${params.numeroId}`)
                 .then(resultado => {
-                    console.log(resultado.data[0].respostas);
+                    //console.log(resultado.data[0].respostas);
                     this.setState(
                         {respostas: resultado.data[0].respostas});
 
@@ -56,7 +56,13 @@
                                     {
 
                                         this.state.respostas.map(resultado =>
-                                            <Button basic color='blue' name={resultado.resposta}>{resultado.resposta.toString()}</Button>
+                                            <Button basic color='blue' onClick={
+                                                (resposta)=>{
+                                                    //criar função para concatenar palavras clicadas
+                                                       resposta = resultado.resposta.toString();
+                                                       console.log(resposta);
+                                                    }
+                                            }>{resultado.resposta.toString()}</Button>
 
                                         )
                                     }
