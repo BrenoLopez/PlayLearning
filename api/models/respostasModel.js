@@ -1,5 +1,5 @@
     const mongoose= require ('mongoose');
 
-    let Respostas = mongoose.model('repostas', {respostas : Array, numeroId: Number});
+    Respostas = mongoose.model('respostas', {respostas : Array, numeroId: Number});
 
     module.exports = Respostas;

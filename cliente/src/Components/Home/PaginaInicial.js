@@ -2,7 +2,7 @@
 
     import {Button} from "semantic-ui-react";
     import './style-pagina-inicial.css';
-    import Logo from './imgs/logo-jogo.jpeg';
+    import Logo from './imgs/logo-jogo.png';
 
 
     const PaginaInicial = () => {

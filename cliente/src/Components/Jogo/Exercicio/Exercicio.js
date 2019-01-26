@@ -4,10 +4,9 @@
     import './style.css';
     import axios from 'axios';
 
-
-
-
-
+    let contadorClicks = 0 ;
+    parseInt(contadorClicks);
+    let arrayRespostaUsuario = [];
     class  Exercicio extends Component {
 
         state = {
@@ -15,6 +14,7 @@
             respostas: []
 
         };
+
         componentDidMount(){
             const { match: { params } } = this.props;
             axios
@@ -28,13 +28,36 @@
             axios
                 .get(`http://localhost:3001/respostasid/${params.numeroId}`)
                 .then(resultado => {
-                    console.log(resultado.data[0].respostas);
+                    //console.log(resultado.data[0].respostas);
                     this.setState(
                         {respostas: resultado.data[0].respostas});
 
                 });
         }
 
+
+
+        pegarValorBotaoResposta = (valorAtual) => {
+
+            do {
+                arrayRespostaUsuario[contadorClicks] = valorAtual;
+                contadorClicks++;
+                console.log(arrayRespostaUsuario);
+                console.log(contadorClicks);
+
+            }
+
+            while (false);
+
+        };
+
+        concatenarEnviarResposta(){
+
+
+                let arrayConcatenado = arrayRespostaUsuario.join(' ');
+                console.log(arrayConcatenado);
+
+        }
         render() {
 
             return (
@@ -56,7 +79,11 @@
                                     {
 
                                         this.state.respostas.map(resultado =>
-                                            <Button basic color='blue' name={resultado.resposta}>{resultado.resposta.toString()}</Button>
+                                            <Button basic color='blue' onClick={
+                                                ()=>{
+                                                this.pegarValorBotaoResposta(resultado.resposta);
+                                                }
+                                            } className={"botaoResposta"} key={resultado.resposta}>{resultado.resposta.toString()}</Button>
 
                                         )
                                     }
@@ -67,8 +94,8 @@
                                 <div className="text-center espacamentoBottom">
 
                                     <Button color='green' onClick={() => {
-                                        console.log("Resposta correta");
-                                    }}>
+                                       this.concatenarEnviarResposta();
+                                    }} >
                                         Validar Resposta
                                     </Button>
                             </div>
