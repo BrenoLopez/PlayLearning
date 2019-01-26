@@ -3,34 +3,37 @@
 
     //  let Respostas = new RespostasNumeroId(
     // {
-    //     respostas:
+    //     alternativas :
     //         [
     //     {
-    //         resposta: "int"
+    //         alternativa: "int"
     //     },
     //     {
-    //         resposta: "integer"
+    //         alternativa: "integer"
     //     },
     //     {
-    //         resposta: "var"
+    //         alternativa: "var"
     //     },
     //     {
-    //         resposta: ";"
+    //         alternativa: ";"
     //     },
     //     {
-    //         resposta: "1variavel"
+    //         alternativa: "1variavel"
     //     },
     //     {
-    //         resposta: "numero"
+    //         alternativa: "numero"
     //     },
     //     {
-    //         resposta: ":"
+    //         alternativa: ":"
     //     },
     //     {
-    //         resposta: "double"
+    //         alternativa: "double"
     //     }
     // ],
-    //     numeroId: 1}
+    //   resposta : "int numero ;"  ,
+    //     numeroId: 1
+    //
+    //     }
     // );
     //
     // Respostas.save(function (err) {
