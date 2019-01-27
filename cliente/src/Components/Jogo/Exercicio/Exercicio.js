@@ -1,6 +1,8 @@
     import React, {Component} from 'react';
     import {Icon,Table,Button,Input } from "semantic-ui-react";
     import {Link} from "react-router-dom";
+    import Swal from 'sweetalert2';
+    import 'sweetalert2/src/sweetalert2.scss'
     import './style.css';
     import axios from 'axios';
 
@@ -43,7 +45,6 @@
             do {
                 arrayRespostaUsuario[contadorClicks] = valorAtual;
                 contadorClicks++;
-                //this.escondeBotao();
                 console.log(arrayRespostaUsuario);
                 console.log(contadorClicks);
 
@@ -55,34 +56,52 @@
 
         concatenarResposta() {
             let arrayConcatenado = arrayRespostaUsuario.join(' ');
-            console.log(arrayConcatenado);
+            //console.log(arrayConcatenado);
             this.enviaResposta(arrayConcatenado);
 
         }
 
-        enviaResposta (resposta){
+        enviaResposta (respostaUsuario){
+            const { match: { params } } = this.props;
              axios
-                 .post('http://localhost:3001/confereResposta', {resposta : resposta})
+                 .post(`http://localhost:3001/confereResposta/${params.numeroId}`,{resposta : respostaUsuario})
                  .then(resultadoRequisicao =>{
-                     if(resultadoRequisicao === true){
-                         return //modal resposta certa;
+
+                    //console.log("Enviei "+JSON.stringify({resposta : respostaUsuario})+" e recebi "+resultadoRequisicao.data);
+                     if(resultadoRequisicao.data === true){
+                          //console.log("resposta certa");
+                         Swal.fire({
+                             title: 'Certa Resposta!',
+                             text: 'Click no botão e bora pra proxima questão!',
+                             type: 'success'
+                         }).then(
+
+                         );
+
                      }
                      else{
-                    //modal resposta incorreta
+                          //console.log("resposta incorreta");
+                         Swal.fire({
+                             title:'Certa Incorreta!',
+                             text:'Click no botão e tente novamente!',
+                             type: 'error'
+                             }
+                         ).then(()=>{
+                             window.location.reload();
+                         });
+
+
                      }
                  });
         }
 
-       //  escondeBotao(){
-       //
-       //          document.querySelector('.botaoResposta').hidden = true;
-       // }
+
 
         render() {
 
             return (
                 <div className="container" >
-                    <Link to="/niveis"><Icon name="arrow circle left" size="big" color="black"
+                    <Link to='/niveis'><Icon name="arrow circle left" size="big" color="black"
                                              className="espacamentoTop"/></Link>
 
                     <Table padded>
@@ -95,12 +114,7 @@
                         <Table.Body>
                             <Table.Row>
                                 <Table.Cell>
-                                    <Input disabled label="Sua resposta:" className="container" placeholder={()=> {
-                                         arrayRespostaUsuario.map((resultado) =>
-                                            <p>{resultado}</p>
-                                        );
-                                        }
-                                    } />
+                                    <Input disabled label="Sua resposta:" className="container" />
 
                                 </Table.Cell>
 

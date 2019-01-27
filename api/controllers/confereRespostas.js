@@ -1,7 +1,17 @@
     const Respostas = require('./../models/respostasModel');
 
-    module.exports = function (app){
-      app.post('/confereResposta',()=>{
 
-      });
-    };
+     confereRespostas = (respostaUsuario) =>{
+        Respostas.find({resposta : respostaUsuario}, (erro, collection) => {
+            if (erro) {
+                return res.send(erro);
+            }
+            if (collection.resposta == respostaUsuario) {
+                console.log(collection.resposta);
+                return res.send(true);
+            } else {
+                return res.send(false);
+            }
+        });
+
+     };

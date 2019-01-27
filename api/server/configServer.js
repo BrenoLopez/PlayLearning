@@ -10,12 +10,12 @@
         //configuração para que a aplicação tenha um res para uma request padrao do navegador antes da requisição verdadeira
         res.setHeader("Access-Control-Allow-Origin","*"); // "*" habilita que a api vai fornecer uma resposta para qualquer aplicação de qualquer dominio
         res.setHeader("Access-Control-Allow-Methods","GET,POST,PUT,DELETE"); //metodos habilidatados atraves de qualquer origem
-        res.setHeader("Access-Control-Allow-Headers","Content-Type"); //habilita que a origem defina o content-type da requisição
+        res.setHeader("Access-Control-Allow-Headers","content-type"); //habilita que a origem defina o content-type da requisição
         res.setHeader("Access-Control-Allow-Credentials",true);
         next();
     });
     app.use(bodyParser.urlencoded({extended: true}));
-
+    app.use(bodyParser.json());
     consign()
           .include('./../rotas')
           .then('./../config/conexaoBd.js')
