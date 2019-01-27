@@ -1,37 +1,61 @@
     const RespostasNumeroId = require('./../models/respostasModel');
 
 
-    //  let Respostas = new RespostasNumeroId(
-    // {
-    //     alternativas :
-    //         [
+    // let Respostas = new RespostasNumeroId(
     //     {
-    //         alternativa: "int"
-    //     },
-    //     {
-    //         alternativa: "integer"
-    //     },
-    //     {
-    //         alternativa: "var"
-    //     },
-    //     {
-    //         alternativa: ";"
-    //     },
-    //     {
-    //         alternativa: "1variavel"
-    //     },
-    //     {
-    //         alternativa: "numero"
-    //     },
-    //     {
-    //         alternativa: ":"
-    //     },
-    //     {
-    //         alternativa: "double"
-    //     }
-    // ],
-    //   resposta : "int numero ;"  ,
-    //     numeroId: 1
+    //         alternativas :
+    //             [
+    //                 {
+    //                     alternativa: "-"
+    //                 },
+    //                 {
+    //                     alternativa: "7"
+    //                 },
+    //                 {
+    //                     alternativa: "9"
+    //                 },
+    //                 {
+    //                     alternativa: "("
+    //                 },
+    //                 {
+    //                     alternativa: "*"
+    //                 },
+    //                 {
+    //                     alternativa: "÷"
+    //                 },
+    //                 {
+    //                     alternativa: ")"
+    //                 },
+    //                 {
+    //                     alternativa: "/"
+    //                 }
+    //                 ,{
+    //                      alternativa: "("
+    //             },
+    //                 {
+    //                     alternativa: "5"
+    //                 },
+    //                 {
+    //                     alternativa: "8"
+    //                 },
+    //                 {
+    //                     alternativa: ")"
+    //                 },
+    //                 {
+    //                     alternativa: "["
+    //                 },
+    //                 {
+    //                     alternativa: "]"
+    //                 },
+    //                 {
+    //                     alternativa: "/"
+    //                 },
+    //                 {
+    //                     alternativa: "+"
+    //                 }
+    //             ],
+    //         resposta : "7 / ( 5 + ( 8 * 9 ) / 5 )"  ,
+    //         numeroId: 3
     //
     //     }
     // );

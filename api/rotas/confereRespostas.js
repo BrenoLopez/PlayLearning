@@ -8,6 +8,8 @@
                 if (erro) {
                     return res.send(erro);
                 }
+                console.log(collection[0].resposta);
+                console.log( req.body.resposta);
 
                 if (collection[0].resposta == req.body.resposta) {
                      res.send(true);

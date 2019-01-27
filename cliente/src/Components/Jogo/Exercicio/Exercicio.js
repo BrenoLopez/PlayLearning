@@ -1,8 +1,9 @@
     import React, {Component} from 'react';
-    import {Icon,Table,Button,Input } from "semantic-ui-react";
+    import {Icon,Table,Button } from "semantic-ui-react";
     import {Link} from "react-router-dom";
     import Swal from 'sweetalert2';
-    import 'sweetalert2/src/sweetalert2.scss'
+    import 'sweetalert2/src/sweetalert2.scss';
+    import 'animate.css/animate.min.css';
     import './style.css';
     import axios from 'axios';
 
@@ -54,7 +55,7 @@
 
         };
 
-        concatenarResposta() {
+        concatenarRespostaEnvia() {
             let arrayConcatenado = arrayRespostaUsuario.join(' ');
             //console.log(arrayConcatenado);
             this.enviaResposta(arrayConcatenado);
@@ -74,17 +75,21 @@
                              title: 'Certa Resposta!',
                              text: 'Click no botão e bora pra proxima questão!',
                              type: 'success'
-                         }).then(
-
-                         );
+                         }).then( ()=>{
+                             this.setState({alternativas : []});
+                             this.setState({instrucao : []});
+                             this.buscaProximoExercicio();
+                         });
 
                      }
                      else{
                           //console.log("resposta incorreta");
                          Swal.fire({
-                             title:'Certa Incorreta!',
+                             title:'Resposta Incorreta!',
                              text:'Click no botão e tente novamente!',
-                             type: 'error'
+                             type: 'error',
+                             animation: false,
+                             customClass: 'animated tada'
                              }
                          ).then(()=>{
                              window.location.reload();
@@ -94,7 +99,12 @@
                      }
                  });
         }
-
+    buscaProximoExercicio(){
+        const { match: { params } } = this.props;
+        let numeroIdAtualizado = parseInt(params.numeroId) + 1;
+        console.log(numeroIdAtualizado);
+        window.location.href = `/exercicio/${numeroIdAtualizado}`;
+    }
 
 
         render() {
@@ -114,7 +124,13 @@
                         <Table.Body>
                             <Table.Row>
                                 <Table.Cell>
-                                    <Input disabled label="Sua resposta:" className="container" />
+                                    {
+                                        function retornaValoresBotao(item) {
+                                            return <Button basic color='green' key={arrayRespostaUsuario} hidden={false} >{item}</Button>
+                                        }
+                                        arrayRespostaUsuario.forEach(retornaValoresBotao);
+
+                                    }
 
                                 </Table.Cell>
 
@@ -127,9 +143,9 @@
                                         this.state.alternativas.map(resultado =>
                                             <Button basic color='blue' onClick={
                                                 ()=>{
-                                                this.pegarValorBotaoResposta(resultado.alternativa);
+                                                this.pegarValorBotaoResposta(resultado.alternativa.toString());
                                                 }
-                                            } className={"botaoResposta"} key={resultado.alternativa} hidden={false} >{resultado.alternativa.toString()}</Button>
+                                            } className={"botaoResposta"} key={resultado.alternativa} hidden={false} >{resultado.alternativa}</Button>
 
                                         )
                                     }
@@ -140,7 +156,7 @@
                                 <div className="text-center espacamentoBottom">
 
                                     <Button color='green' onClick={() => {
-                                       this.concatenarResposta();
+                                       this.concatenarRespostaEnvia();
                                     }} >
                                         Validar Resposta
                                     </Button>

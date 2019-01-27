@@ -2,7 +2,7 @@
 
 
      confereRespostas = (respostaUsuario) =>{
-        Respostas.find({resposta : respostaUsuario}, (erro, collection) => {
+        Respostas.find({resposta : respostaUsuario,numeroId : numeroIdExercicio}, (erro, collection) => {
             if (erro) {
                 return res.send(erro);
             }
