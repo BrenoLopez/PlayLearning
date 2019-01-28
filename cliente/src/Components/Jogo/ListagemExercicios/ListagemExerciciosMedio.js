@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { ListGroup, ListGroupItem  } from 'reactstrap';
+import { ListGroup  } from 'reactstrap';
 import {Icon,Segment} from "semantic-ui-react";
 import {Link} from "react-router-dom";
 import './style.css';

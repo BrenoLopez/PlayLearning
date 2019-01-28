@@ -24,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cliente/src/Components/Jogo/Exercicio/Exercicio.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="259" column="121" selection-start-line="259" selection-start-column="121" selection-end-line="259" selection-end-column="121" />
+            <state relative-caret-position="-428">
+              <caret line="100" column="61" selection-start-line="100" selection-start-column="61" selection-end-line="100" selection-end-column="61" />
               <folding>
                 <element signature="e#4#43#0" expanded="true" />
               </folding>
@@ -37,13 +37,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cliente/src/Components/Jogo/ListagemExercicios/ListagemExerciciosAvancado.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cliente/src/Components/Jogo/ListagemExercicios/ListagemExerciciosBasico.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="38" column="113" selection-start-line="38" selection-start-column="113" selection-end-line="38" selection-end-column="113" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cliente/src/Components/Jogo/ListagemExercicios/ListagemExerciciosMedio.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -124,20 +139,20 @@
         <option value="$PROJECT_DIR$/api/rotas/inseriRespostasMenual.js" />
         <option value="$PROJECT_DIR$/cliente/src/Components/Home/PaginaInicial.js" />
         <option value="$PROJECT_DIR$/api/rotas/respostasNumeroId.js" />
-        <option value="$PROJECT_DIR$/cliente/src/Components/Jogo/ListagemExercicios/ListagemExerciciosBasico.js" />
         <option value="$PROJECT_DIR$/cliente/src/Routes/routes.js" />
-        <option value="$PROJECT_DIR$/cliente/src/Components/Jogo/ListagemExercicios/ListagemExerciciosMedio.js" />
-        <option value="$PROJECT_DIR$/cliente/src/Components/Jogo/ListagemExercicios/ListagemExerciciosAvancado.js" />
         <option value="$PROJECT_DIR$/api/rotas/exerciciosNumeroId.js" />
         <option value="$PROJECT_DIR$/api/rotas/exercicios.js" />
         <option value="$PROJECT_DIR$/cliente/src/Components/Jogo/Exercicio/Exercicio.js" />
+        <option value="$PROJECT_DIR$/cliente/src/Components/Jogo/ListagemExercicios/ListagemExerciciosAvancado.js" />
+        <option value="$PROJECT_DIR$/cliente/src/Components/Jogo/ListagemExercicios/ListagemExerciciosBasico.js" />
+        <option value="$PROJECT_DIR$/cliente/src/Components/Jogo/ListagemExercicios/ListagemExerciciosMedio.js" />
       </list>
     </option>
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/api/package.json" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="735" />
@@ -301,18 +316,18 @@
       <workItem from="1548522024262" duration="35261000" />
       <workItem from="1548635122370" duration="8426000" />
       <workItem from="1548677390109" duration="7692000" />
-      <workItem from="1548695122982" duration="15593000" />
+      <workItem from="1548695122982" duration="16269000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="261398000" />
+    <option name="totallyTimeSpent" value="262074000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24886535" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24886535" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -325,7 +340,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.26350245" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.26350245" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -570,26 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cliente/src/Components/Jogo/ListagemExercicios/ListagemExerciciosAvancado.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="32" column="69" selection-end-line="49" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cliente/src/Components/Jogo/ListagemExercicios/ListagemExerciciosMedio.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="34" column="70" lean-forward="true" selection-start-line="34" selection-start-column="70" selection-end-line="34" selection-end-column="70" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/rotas/exerciciosNumeroId.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -604,23 +599,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cliente/src/Components/Jogo/ListagemExercicios/ListagemExerciciosBasico.js">
+    <entry file="file://$PROJECT_DIR$/cliente/src/Components/Jogo/Exercicio/Exercicio.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="38" column="113" selection-start-line="38" selection-start-column="113" selection-end-line="38" selection-end-column="113" />
+        <state relative-caret-position="-428">
+          <caret line="100" column="61" selection-start-line="100" selection-start-column="61" selection-end-line="100" selection-end-column="61" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#4#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cliente/src/Components/Jogo/Exercicio/Exercicio.js">
+    <entry file="file://$PROJECT_DIR$/cliente/src/Components/Jogo/ListagemExercicios/ListagemExerciciosAvancado.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="259" column="121" selection-start-line="259" selection-start-column="121" selection-end-line="259" selection-end-column="121" />
-          <folding>
-            <element signature="e#4#43#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente/src/Components/Jogo/ListagemExercicios/ListagemExerciciosBasico.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente/src/Components/Jogo/ListagemExercicios/ListagemExerciciosMedio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
         </state>
       </provider>
     </entry>
