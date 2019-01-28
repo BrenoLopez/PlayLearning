@@ -11,17 +11,6 @@
     parseInt(contadorClicks);
     let arrayRespostaUsuario = [];
 
-   const progress_bar = {
-    // width: 350,
-    heigth: 100
-};
-
-
-// const ProgressExampleProgressValuePercentageOfTotal = () => (
-//
-//   <Progress progress='value' value={35} total={50} />
-// );
-
     class  Exercicio extends Component {
 
 
@@ -268,9 +257,10 @@
                             <br/>
                         </Table.Body>
                     </Table>
-                    <Progress style={progress_bar} value={this.state.numeroExercicioProgresso}  total= {'5'} progress='ratio'/>
-
+                    <Progress  value={this.state.numeroExercicioProgresso} total={this.state.numeroExercicios} indicating active progress='ratio' size="small" color="yellow"/>
                 </div>
+
+
 
             );
         }
