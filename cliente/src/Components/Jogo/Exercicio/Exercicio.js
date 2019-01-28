@@ -10,6 +10,7 @@
     let contadorClicks = 0 ;
     parseInt(contadorClicks);
     let arrayRespostaUsuario = [];
+    const urlApi = "http://localhost:3001";
 
     class  Exercicio extends Component {
 
@@ -27,7 +28,7 @@
         componentDidMount(){
             const { match : {params} } = this.props;
             axios
-                .get(`http://localhost:3001/exercicioid/${params.numeroId}/${params.nivel}`)
+                .get(`${urlApi}/exercicioid/${params.numeroId}/${params.nivel}`)
                 .then(resultado => {
                    //console.log(resultado.data[0].nivel);
                     this.setState({
@@ -40,7 +41,7 @@
                 });
 
             axios
-                .get(`http://localhost:3001/respostasid/${params.numeroId}/${params.nivel}`)
+                .get(`${urlApi}/respostasid/${params.numeroId}/${params.nivel}`)
                 .then(resultado => {
                     //console.log(resultado.data[0].alternativas);
                     this.setState(
@@ -48,7 +49,7 @@
 
                 });
             axios
-                .get(`http://localhost:3001/exercicios/${params.nivel}`)
+                .get(`${urlApi}/exercicios/${params.nivel}`)
                 .then(resultado => {
                     //console.log(resultado.data.length);
                     this.setState({
@@ -86,8 +87,9 @@
 
         enviaResposta (respostaUsuario){
             const { match: { params } } = this.props;
+
              axios
-                 .post(`http://localhost:3001/confereResposta/${params.numeroId}`,{resposta : respostaUsuario})
+                 .post(`${urlApi}/confereResposta/${params.numeroId}`,{resposta : respostaUsuario})
                  .then(resultadoRequisicao =>{
                     //console.log("Enviei "+JSON.stringify({resposta : respostaUsuario})+" e recebi "+resultadoRequisicao.data);
                      if(resultadoRequisicao.data === true){
@@ -250,7 +252,7 @@
                                      <Button color='red' onClick={() => {
                                        window.location.reload();
                                     }} >
-                                        Limpara Respostas
+                                        Limpar Resposta
                                     </Button>
                             </div>
                             </Table.Row>
