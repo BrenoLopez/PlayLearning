@@ -1,71 +1,172 @@
     import React, {Component} from 'react';
     import {Icon,Table,Button } from "semantic-ui-react";
     import {Link} from "react-router-dom";
+    import Swal from 'sweetalert2';
+    import 'sweetalert2/src/sweetalert2.scss';
+    import 'animate.css/animate.min.css';
     import './style.css';
     import axios from 'axios';
 
+    let contadorClicks = 0 ;
+    parseInt(contadorClicks);
+    let arrayRespostaUsuario = [];
+
     class  Exercicio extends Component {
-        constructor(props) {
-            super(props);
-            //estado do componente começa com o resultado como um array vazio
-            this.state = {
-                exercicio: [],
-                pergunta: []
 
-            };
+        state = {
+            instrucao : [],
+            alternativas: [],
 
+        };
+
+        componentDidMount(){
+            const { match: { params } } = this.props;
             axios
-                .get('http://localhost:3001/exercicios/?nivel=1')
-                .then(resultadoRequisicao => {
-                    console.log(resultadoRequisicao.data.pergunta);
-                    console.log(resultadoRequisicao.data.respostas);
-                    this.setState({
-                             pergunta: resultadoRequisicao.data.pergunta,
-                             exercicio: resultadoRequisicao.data.respostas
-                        }
-                    );
-
+                .get(`http://localhost:3001/exercicioid/${params.numeroId}`)
+                .then(resultado => {
+                   // console.log(resultado.data[0].instrucao);
+                    this.setState({instrucao: resultado.data[0].instrucao});
 
                 });
 
+            axios
+                .get(`http://localhost:3001/respostasid/${params.numeroId}`)
+                .then(resultado => {
+                    //console.log(resultado.data[0].alternativas);
+                    this.setState(
+                        {alternativas: resultado.data[0].alternativas});
+
+                });
         }
+
+
+
+        pegarValorBotaoResposta = (valorAtual) => {
+
+            do {
+                arrayRespostaUsuario[contadorClicks] = valorAtual;
+                contadorClicks++;
+                console.log(arrayRespostaUsuario);
+                console.log(contadorClicks);
+
+            }
+
+            while (false);
+
+        };
+
+        concatenarRespostaEnvia() {
+            let arrayConcatenado = arrayRespostaUsuario.join(' ');
+            //console.log(arrayConcatenado);
+            this.enviaResposta(arrayConcatenado);
+
+        }
+
+        enviaResposta (respostaUsuario){
+            const { match: { params } } = this.props;
+             axios
+                 .post(`http://localhost:3001/confereResposta/${params.numeroId}`,{resposta : respostaUsuario})
+                 .then(resultadoRequisicao =>{
+
+                    //console.log("Enviei "+JSON.stringify({resposta : respostaUsuario})+" e recebi "+resultadoRequisicao.data);
+                     if(resultadoRequisicao.data === true){
+                          //console.log("resposta certa");
+                         Swal.fire({
+                             title: 'Certa Resposta!',
+                             text: 'Click no botão e bora pra proxima questão!',
+                             type: 'success'
+                         }).then( ()=>{
+                             this.setState({alternativas : []});
+                             this.setState({instrucao : []});
+                             this.buscaProximoExercicio();
+                         });
+
+                     }
+                     else{
+                          //console.log("resposta incorreta");
+                         Swal.fire({
+                             title:'Resposta Incorreta!',
+                             text:'Click no botão e tente novamente!',
+                             type: 'error',
+                             animation: false,
+                             customClass: 'animated tada'
+                             }
+                         ).then(()=>{
+                             window.location.reload();
+                         });
+
+
+                     }
+                 });
+        }
+    buscaProximoExercicio(){
+        const { match: { params } } = this.props;
+        let numeroIdAtualizado = parseInt(params.numeroId) + 1;
+        console.log(numeroIdAtualizado);
+        window.location.href = `/exercicio/${numeroIdAtualizado}`;
+    }
 
 
         render() {
 
             return (
-                <div className="container">
-                    <Link to="/niveis"><Icon name="arrow circle left" size="big" color="black"
+                <div className="container" >
+                    <Link to='/niveis'><Icon name="arrow circle left" size="big" color="black"
                                              className="espacamentoTop"/></Link>
 
                     <Table padded>
                         <Table.Header>
                             <Table.Row>
-                                <Table.HeaderCell>Instrução : {this.state.pergunta}  </Table.HeaderCell>
+                                <Table.HeaderCell>Instrução : {this.state.instrucao.toString()}  </Table.HeaderCell>
                             </Table.Row>
                         </Table.Header>
 
                         <Table.Body>
                             <Table.Row>
                                 <Table.Cell>
-                                    <Button basic color='blue'>
-                                        {this.state.exercicio}
-                                    </Button>
+                                    {
+                                        function retornaValoresBotao(item) {
+                                            return <Button basic color='green' key={arrayRespostaUsuario} hidden={false} >{item}</Button>
+                                        }
+                                        arrayRespostaUsuario.forEach(retornaValoresBotao);
 
+                                    }
+
+                                </Table.Cell>
+
+
+                            </Table.Row>
+                            <Table.Row>
+                                <Table.Cell className="text-center">
+                                    {
+
+                                        this.state.alternativas.map(resultado =>
+                                            <Button basic color='blue' onClick={
+                                                ()=>{
+                                                this.pegarValorBotaoResposta(resultado.alternativa.toString());
+                                                }
+                                            } className={"botaoResposta"} key={resultado.alternativa} hidden={false} >{resultado.alternativa}</Button>
+
+                                        )
+                                    }
                                 </Table.Cell>
                             </Table.Row>
 
                             <Table.Row>
                                 <div className="text-center espacamentoBottom">
+
                                     <Button color='green' onClick={() => {
-                                        console.log("Resposta correta");
-                                    }}>
+                                       this.concatenarRespostaEnvia();
+                                    }} >
                                         Validar Resposta
                                     </Button>
-                                </div>
+                            </div>
+
                             </Table.Row>
+
                         </Table.Body>
                     </Table>
+
                 </div>
             );
         }

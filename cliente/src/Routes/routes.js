@@ -14,7 +14,7 @@
         <Switch>
           <Route exact path="/" component= {PaginaInicial}/>
           <Route path="/niveis" component={Niveis}/>
-          <Route path="/exercicio" component={Exercicio}/>
+          <Route path="/exercicio/:numeroId" component={Exercicio}/>
           <Route path="/listagemExercicios/basico" component={ListagemExerciciosBasico}/>
           <Route path="/listagemExercicios/medio" component={ListagemExerciciosMedio}/>
             <Route path="/listagemExercicios/avancado" component={ListagemExerciciosAvancado}/>
