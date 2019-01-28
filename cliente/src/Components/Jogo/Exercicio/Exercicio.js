@@ -1,5 +1,5 @@
     import React, {Component} from 'react';
-    import {Icon,Table,Button,Popup } from "semantic-ui-react";
+    import {Icon,Table,Button,Popup,Progress } from "semantic-ui-react";
     import {Link} from "react-router-dom";
     import Swal from 'sweetalert2';
     import 'sweetalert2/src/sweetalert2.scss';
@@ -11,6 +11,14 @@
     parseInt(contadorClicks);
     let arrayRespostaUsuario = [];
 
+   const progress_bar = {
+    // width: 350,
+    heigth: 100
+};
+
+const ProgressExampleProgressValuePercentageOfTotal = () => (
+  <Progress progress='value' value={35} total={50} />
+)
 
     class  Exercicio extends Component {
 
@@ -175,14 +183,21 @@
                                     }} >
                                         Validar Resposta
                                     </Button>
+
+                                     <Button color='red' onClick={() => {
+                                       window.location.reload();
+                                    }} >
+                                        Limpara Respostas
+                                    </Button>
                             </div>
-
                             </Table.Row>
-
+                            <br/>
                         </Table.Body>
                     </Table>
+                    <Progress style={progress_bar} value={1}  total= {'5'} progress='ratio'/>
 
                 </div>
+
             );
         }
     }
