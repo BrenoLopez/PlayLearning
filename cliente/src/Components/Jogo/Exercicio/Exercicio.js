@@ -18,7 +18,7 @@
 
 const ProgressExampleProgressValuePercentageOfTotal = () => (
   <Progress progress='value' value={35} total={50} />
-)
+);
 
     class  Exercicio extends Component {
 
@@ -150,7 +150,8 @@ const ProgressExampleProgressValuePercentageOfTotal = () => (
                                         //modal para dica
                                          Swal.fire({
                                              title:"Dica:",
-                                             text : this.state.dica
+                                             text : this.state.dica,
+                                             type : "info"
                                          });
                                         }
                                     }/>} content='Click e ganhe uma dica :-)' position={'bottom left'}/>

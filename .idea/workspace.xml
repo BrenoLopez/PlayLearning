@@ -24,50 +24,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/rotas/inseriRespostasMenual.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/rotas/exerciciosNumeroId.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/rotas/exerciciosNivel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-20">
-              <caret line="7" column="42" lean-forward="true" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cliente/src/Components/Jogo/Exercicio/Exercicio.js">
+        <entry file="file://$PROJECT_DIR$/cliente/src/Components/Home/PaginaInicial.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="18" column="61" lean-forward="true" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
+            <state relative-caret-position="204">
+              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="48" />
               <folding>
-                <element signature="e#4#43#0" expanded="true" />
+                <element signature="e#4#30#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/rotas/confereRespostas.js">
+        <entry file="file://$PROJECT_DIR$/cliente/src/Components/Jogo/Exercicio/Exercicio.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+            <state relative-caret-position="-1360">
+              <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+              <folding>
+                <element signature="e#4#43#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,7 +108,6 @@
         <option value="$PROJECT_DIR$/api/rotas/exerciciosNivel.js" />
         <option value="$PROJECT_DIR$/api/rotas/exerciciosNumeroId.js" />
         <option value="$PROJECT_DIR$/api/models/exerciciosModel.js" />
-        <option value="$PROJECT_DIR$/cliente/src/Components/Home/PaginaInicial.js" />
         <option value="$PROJECT_DIR$/api/models/respostasModel.js" />
         <option value="$PROJECT_DIR$/api/server/configServer.js" />
         <option value="$PROJECT_DIR$/cliente/src/Components/Jogo/ListagemExercicios/ListagemExerciciosMedio.js" />
@@ -146,6 +121,7 @@
         <option value="$PROJECT_DIR$/api/rotas/confereRespostas.js" />
         <option value="$PROJECT_DIR$/api/rotas/inseriRespostasMenual.js" />
         <option value="$PROJECT_DIR$/cliente/src/Components/Jogo/Exercicio/Exercicio.js" />
+        <option value="$PROJECT_DIR$/cliente/src/Components/Home/PaginaInicial.js" />
       </list>
     </option>
   </component>
@@ -168,23 +144,6 @@
             <path>
               <item name="PlayLearning" type="b2602c69:ProjectViewProjectNode" />
               <item name="PlayLearning" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PlayLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlayLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PlayLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlayLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="rotas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PlayLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlayLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PlayLearning" type="b2602c69:ProjectViewProjectNode" />
@@ -228,24 +187,6 @@
               <item name="Components" type="462c0819:PsiDirectoryNode" />
               <item name="Jogo" type="462c0819:PsiDirectoryNode" />
               <item name="Exercicio" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PlayLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlayLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="cliente" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Components" type="462c0819:PsiDirectoryNode" />
-              <item name="Jogo" type="462c0819:PsiDirectoryNode" />
-              <item name="ListagemExercicios" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PlayLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlayLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="cliente" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Components" type="462c0819:PsiDirectoryNode" />
-              <item name="Jogo" type="462c0819:PsiDirectoryNode" />
-              <item name="Niveis" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -323,12 +264,12 @@
       <workItem from="1548519411669" duration="2242000" />
       <workItem from="1548522024262" duration="35261000" />
       <workItem from="1548635122370" duration="8426000" />
-      <workItem from="1548677390109" duration="3988000" />
+      <workItem from="1548677390109" duration="7692000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="242101000" />
+    <option name="totallyTimeSpent" value="245805000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -347,7 +288,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.26350245" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.26350245" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -501,16 +442,6 @@
     <entry file="file://$PROJECT_DIR$/api/banco/respostas/playlearn/respostas.bson">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/cliente/src/Components/Home/PaginaInicial.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#4#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/models/exerciciosModel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -618,13 +549,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/controllers/confereRespostas.js" />
-    <entry file="file://$PROJECT_DIR$/api/rotas/inseriRespostasMenual.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/rotas/confereRespostas.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -634,7 +558,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/rotas/exerciciosNivel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-20">
+        <state relative-caret-position="-6">
           <caret line="7" column="42" lean-forward="true" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
         </state>
       </provider>
@@ -646,12 +570,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/rotas/inseriRespostasMenual.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cliente/src/Components/Jogo/Exercicio/Exercicio.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="18" column="61" lean-forward="true" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
+        <state relative-caret-position="-1360">
+          <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
           <folding>
             <element signature="e#4#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliente/src/Components/Home/PaginaInicial.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="48" />
+          <folding>
+            <element signature="e#4#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
