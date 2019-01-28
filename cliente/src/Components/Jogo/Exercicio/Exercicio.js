@@ -44,7 +44,6 @@ const ProgressExampleProgressValuePercentageOfTotal = () => (
                         instrucao: resultado.data[0].instrucao,
                         dica : resultado.data[0].dica,
                         numeroId : resultado.data[0].numeroId
-                        //numeroExercicios: resultado.data[0].length
 
                     });
 
@@ -58,6 +57,17 @@ const ProgressExampleProgressValuePercentageOfTotal = () => (
                         {alternativas: resultado.data[0].alternativas});
 
                 });
+            axios
+                .get(`http://localhost:3001/exercicios/${params.nivel}`)
+                .then(resultado => {
+                    //console.log(resultado.data.length);
+                    this.setState({
+                       numeroExercicios: resultado.data.length
+
+                    });
+
+                });
+
         }
 
 
@@ -123,33 +133,63 @@ const ProgressExampleProgressValuePercentageOfTotal = () => (
     buscaProximoExercicio() {
         const {match: {params}} = this.props;
         let numeroIdAtualizado = parseInt(params.numeroId) + 1;
-        console.log(numeroIdAtualizado);
-        console.log(this.state.numeroExercicios);
+        //console.log(numeroIdAtualizado);
+        //console.log(this.state.numeroExercicios);
+        //console.log(params.numeroId);
+        //console.log(params.nivel);
+        if (numeroIdAtualizado === (this.state.numeroExercicios + 1) && params.nivel.toString() === "basico") {
+            numeroIdAtualizado = 1;
+            Swal.fire({
+                title: "Parabéns",
+                text: "Você está apto a jogar o proximo nivel!",
+                type: "success"
+            }).then(() => {
+                window.location.href = `/exercicio/${numeroIdAtualizado}/medio`
 
-        if (numeroIdAtualizado === this.state.numeroExercicios && params.nivel === "basico") {
+            });
+        } else if (numeroIdAtualizado === (this.state.numeroExercicios + 1) && params.nivel === "medio") {
+            numeroIdAtualizado = 1;
             Swal.fire({
                 title: "Parabéns",
-                text:"Você está apto a jogar o proximo nivel!",
+                text: "Você está apto a jogar o proximo nivel!",
                 type: "success"
-            }).then( ()=>{window.location.href = `/exercicio/${numeroIdAtualizado}/medio`});
-        }
-        if (numeroIdAtualizado === this.state.numeroExercicios && params.nivel === "medio") {
+            }).then(() => {
+                window.location.href = `/exercicio/${numeroIdAtualizado}/avancado`
+            });
+        } else if (numeroIdAtualizado === (this.state.numeroExercicios + 1) && params.nivel === "avancado") {
+            numeroIdAtualizado = 1;
             Swal.fire({
                 title: "Parabéns",
-                text:"Você está apto a jogar o proximo nivel!",
+                text: "Você finalizou o jogo !",
                 type: "success"
-            }).then( ()=>{window.location.href = `/exercicio/${numeroIdAtualizado}/medio`});
+            }).then(() => {
+                window.location.href = `/niveis`
+            });
+        }else
+        if (params.numeroId === this.state.numeroExercicios) {
+            numeroIdAtualizado = 1;
+            if (params.nivel.toString() === "basico") {
+                Swal.fire({
+                    title: "Parabéns",
+                    text: "Você está apto a jogar o proximo nivel!",
+                    type: "success"
+                }).then(() => {
+                    window.location.href = `/exercicio/${numeroIdAtualizado}/medio`
+                });
+            }  if (params.nivel.toString() === "medio") {
+                Swal.fire({
+                    title: "Parabéns",
+                    text: "Você está apto a jogar o proximo nivel!",
+                    type: "success"
+                }).then(() => {
+                    window.location.href = `/exercicio/${numeroIdAtualizado}/avancado`
+                });
+            }
         }
-        if (numeroIdAtualizado === this.state.numeroExercicios && params.nivel === "avancado") {
-            Swal.fire({
-                title: "Parabéns",
-                text:"Você finalizou o jogo !",
-                type: "success"
-            }).then( ()=>{window.location.href = `/niveis`});
-        }
+            else
+                window.location.href = `/exercicio/${numeroIdAtualizado}/${params.nivel}`;
 
-        else
-            window.location.href = `/exercicio/${numeroIdAtualizado}/${params.nivel}`;
+
     }
 
     retornaRespostaUsuario (valorResposta){
