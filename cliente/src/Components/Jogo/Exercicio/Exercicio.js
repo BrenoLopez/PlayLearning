@@ -1,5 +1,5 @@
     import React, {Component} from 'react';
-    import {Icon,Table,Button } from "semantic-ui-react";
+    import {Icon,Table,Button,Popup } from "semantic-ui-react";
     import {Link} from "react-router-dom";
     import Swal from 'sweetalert2';
     import 'sweetalert2/src/sweetalert2.scss';
@@ -10,6 +10,7 @@
     let contadorClicks = 0 ;
     parseInt(contadorClicks);
     let arrayRespostaUsuario = [];
+
 
     class  Exercicio extends Component {
 
@@ -47,7 +48,7 @@
                 arrayRespostaUsuario[contadorClicks] = valorAtual;
                 contadorClicks++;
                 console.log(arrayRespostaUsuario);
-                console.log(contadorClicks);
+               // console.log(contadorClicks);
 
             }
 
@@ -99,6 +100,7 @@
                      }
                  });
         }
+
     buscaProximoExercicio(){
         const { match: { params } } = this.props;
         let numeroIdAtualizado = parseInt(params.numeroId) + 1;
@@ -106,8 +108,14 @@
         window.location.href = `/exercicio/${numeroIdAtualizado}`;
     }
 
+    retornaRespostaUsuario (valorResposta){
+        document.querySelector('.lugarRespostaUsuario').append(valorResposta+" ");
+
+        }
+
 
         render() {
+
 
             return (
                 <div className="container" >
@@ -123,19 +131,16 @@
 
                         <Table.Body>
                             <Table.Row>
-                                <Table.Cell>
-                                    {
-                                        function retornaValoresBotao(item) {
-                                            return <Button basic color='green' key={arrayRespostaUsuario} hidden={false} >{item}</Button>
+                                <Table.Cell >
+                                    <Popup trigger={<Button  basic color="green"  className=" lugarRespostaUsuario" content="Sua resposta: " fluid  onClick={
+                                        ()=>{
+                                        //modal para dica
                                         }
-                                        arrayRespostaUsuario.forEach(retornaValoresBotao);
-
-                                    }
+                                    }/>} content='Click e ganhe uma dica :-)' position={'bottom left'}/>
 
                                 </Table.Cell>
-
-
                             </Table.Row>
+
                             <Table.Row>
                                 <Table.Cell className="text-center">
                                     {
@@ -144,6 +149,7 @@
                                             <Button basic color='blue' onClick={
                                                 ()=>{
                                                 this.pegarValorBotaoResposta(resultado.alternativa.toString());
+                                                this.retornaRespostaUsuario(resultado.alternativa.toString());
                                                 }
                                             } className={"botaoResposta"} key={resultado.alternativa} hidden={false} >{resultado.alternativa}</Button>
 
