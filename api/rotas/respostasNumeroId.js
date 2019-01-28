@@ -68,15 +68,16 @@
 
     module.exports = function(app) {
         //Buscar respostas do bd e responder por aqui em formato json
-        app.get('/respostasid/:numeroId', function (req, res) {
+        app.get('/respostasid/:numeroId/:nivel', function (req, res) {
 
             RespostasNumeroId.find(
-                {numeroId: req.params.numeroId},
+                {numeroId: req.params.numeroId, nivel: req.params.nivel},
                 function (err, collection) {
                     if (err)
                         return console.error(err);
                     else
                         console.log("Foi recuperado o reposta com numeroId: "+req.params.numeroId);
+                        console.log("Foi recuperado o reposta com nivel: "+req.params.nivel);
                     res.json(collection);
                 });
         });

@@ -16,35 +16,42 @@
     heigth: 100
 };
 
+
 const ProgressExampleProgressValuePercentageOfTotal = () => (
+
   <Progress progress='value' value={35} total={50} />
 );
 
     class  Exercicio extends Component {
 
+
         state = {
             instrucao : [],
             dica: [],
-            alternativas: []
+            alternativas: [],
+            numeroExercicios: 0
 
 
         };
 
         componentDidMount(){
-            const { match: { params } } = this.props;
+            const { match : {params} } = this.props;
             axios
-                .get(`http://localhost:3001/exercicioid/${params.numeroId}`)
+                .get(`http://localhost:3001/exercicioid/${params.numeroId}/${params.nivel}`)
                 .then(resultado => {
-                   // console.log(resultado.data[0].instrucao);
+                   //console.log(resultado.data[0].nivel);
                     this.setState({
                         instrucao: resultado.data[0].instrucao,
-                        dica : resultado.data[0].dica
+                        dica : resultado.data[0].dica,
+                        numeroId : resultado.data[0].numeroId
+                        //numeroExercicios: resultado.data[0].length
+
                     });
 
                 });
 
             axios
-                .get(`http://localhost:3001/respostasid/${params.numeroId}`)
+                .get(`http://localhost:3001/respostasid/${params.numeroId}/${params.nivel}`)
                 .then(resultado => {
                     //console.log(resultado.data[0].alternativas);
                     this.setState(
@@ -81,7 +88,6 @@ const ProgressExampleProgressValuePercentageOfTotal = () => (
              axios
                  .post(`http://localhost:3001/confereResposta/${params.numeroId}`,{resposta : respostaUsuario})
                  .then(resultadoRequisicao =>{
-
                     //console.log("Enviei "+JSON.stringify({resposta : respostaUsuario})+" e recebi "+resultadoRequisicao.data);
                      if(resultadoRequisicao.data === true){
                           //console.log("resposta certa");
@@ -114,11 +120,36 @@ const ProgressExampleProgressValuePercentageOfTotal = () => (
                  });
         }
 
-    buscaProximoExercicio(){
-        const { match: { params } } = this.props;
+    buscaProximoExercicio() {
+        const {match: {params}} = this.props;
         let numeroIdAtualizado = parseInt(params.numeroId) + 1;
         console.log(numeroIdAtualizado);
-        window.location.href = `/exercicio/${numeroIdAtualizado}`;
+        console.log(this.state.numeroExercicios);
+
+        if (numeroIdAtualizado === this.state.numeroExercicios && params.nivel === "basico") {
+            Swal.fire({
+                title: "Parabéns",
+                text:"Você está apto a jogar o proximo nivel!",
+                type: "success"
+            }).then( ()=>{window.location.href = `/exercicio/${numeroIdAtualizado}/medio`});
+        }
+        if (numeroIdAtualizado === this.state.numeroExercicios && params.nivel === "medio") {
+            Swal.fire({
+                title: "Parabéns",
+                text:"Você está apto a jogar o proximo nivel!",
+                type: "success"
+            }).then( ()=>{window.location.href = `/exercicio/${numeroIdAtualizado}/medio`});
+        }
+        if (numeroIdAtualizado === this.state.numeroExercicios && params.nivel === "avancado") {
+            Swal.fire({
+                title: "Parabéns",
+                text:"Você finalizou o jogo !",
+                type: "success"
+            }).then( ()=>{window.location.href = `/niveis`});
+        }
+
+        else
+            window.location.href = `/exercicio/${numeroIdAtualizado}/${params.nivel}`;
     }
 
     retornaRespostaUsuario (valorResposta){

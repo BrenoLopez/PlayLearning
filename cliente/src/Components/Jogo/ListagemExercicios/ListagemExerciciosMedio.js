@@ -37,7 +37,7 @@ export default class ListagemExerciciosMedio extends Component {
                 <ListGroup className="espacamentoTop">
                     {
                         this.state.exercicios.map(exercicios =>
-                            <Segment circular style={tamanho}tag="a" href={"/exercicio/"+ exercicios.numeroId} action key={exercicios.numeroId}> Exercicio {exercicios.numeroId}
+                            <Segment circular style={tamanho}tag="a" href={"/exercicio/"+ exercicios.numeroId+"/"+exercicios.nivel} action key={exercicios.numeroId}> Exercicio {exercicios.numeroId}
                              </Segment>)}
 
                 </ListGroup>
