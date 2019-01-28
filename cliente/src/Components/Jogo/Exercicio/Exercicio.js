@@ -16,7 +16,9 @@
 
         state = {
             instrucao : [],
-            alternativas: [],
+            dica: [],
+            alternativas: []
+
 
         };
 
@@ -26,7 +28,10 @@
                 .get(`http://localhost:3001/exercicioid/${params.numeroId}`)
                 .then(resultado => {
                    // console.log(resultado.data[0].instrucao);
-                    this.setState({instrucao: resultado.data[0].instrucao});
+                    this.setState({
+                        instrucao: resultado.data[0].instrucao,
+                        dica : resultado.data[0].dica
+                    });
 
                 });
 
@@ -135,6 +140,10 @@
                                     <Popup trigger={<Button  basic color="green"  className=" lugarRespostaUsuario" content="Sua resposta: " fluid  onClick={
                                         ()=>{
                                         //modal para dica
+                                         Swal.fire({
+                                             title:"Dica:",
+                                             text : this.state.dica
+                                         });
                                         }
                                     }/>} content='Click e ganhe uma dica :-)' position={'bottom left'}/>
 
