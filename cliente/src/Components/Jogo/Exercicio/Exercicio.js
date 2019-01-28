@@ -17,10 +17,10 @@
 };
 
 
-const ProgressExampleProgressValuePercentageOfTotal = () => (
-
-  <Progress progress='value' value={35} total={50} />
-);
+// const ProgressExampleProgressValuePercentageOfTotal = () => (
+//
+//   <Progress progress='value' value={35} total={50} />
+// );
 
     class  Exercicio extends Component {
 
@@ -29,7 +29,8 @@ const ProgressExampleProgressValuePercentageOfTotal = () => (
             instrucao : [],
             dica: [],
             alternativas: [],
-            numeroExercicios: 0
+            numeroExercicios: 0,
+            numeroExercicioProgresso : 0
 
 
         };
@@ -62,7 +63,8 @@ const ProgressExampleProgressValuePercentageOfTotal = () => (
                 .then(resultado => {
                     //console.log(resultado.data.length);
                     this.setState({
-                       numeroExercicios: resultado.data.length
+                       numeroExercicios: resultado.data.length,
+                        numeroExercicioProgresso : params.numeroId
 
                     });
 
@@ -266,7 +268,7 @@ const ProgressExampleProgressValuePercentageOfTotal = () => (
                             <br/>
                         </Table.Body>
                     </Table>
-                    <Progress style={progress_bar} value={1}  total= {'5'} progress='ratio'/>
+                    <Progress style={progress_bar} value={this.state.numeroExercicioProgresso}  total= {'5'} progress='ratio'/>
 
                 </div>
 
