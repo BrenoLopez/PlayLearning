@@ -69,7 +69,7 @@
             do {
                 arrayRespostaUsuario[contadorClicks] = valorAtual;
                 contadorClicks++;
-                console.log(arrayRespostaUsuario);
+               // console.log(arrayRespostaUsuario);
                // console.log(contadorClicks);
 
             }
@@ -89,7 +89,7 @@
             const { match: { params } } = this.props;
 
              axios
-                 .post(`${urlApi}/confereResposta/${params.numeroId}`,{resposta : respostaUsuario})
+                 .post(`${urlApi}/confereResposta/${params.numeroId}/${params.nivel}`,{resposta : respostaUsuario})
                  .then(resultadoRequisicao =>{
                     //console.log("Enviei "+JSON.stringify({resposta : respostaUsuario})+" e recebi "+resultadoRequisicao.data);
                      if(resultadoRequisicao.data === true){

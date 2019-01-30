@@ -1,8 +1,8 @@
     const Respostas = require('./../models/respostasModel');
     module.exports = function (app) {
-        app.post('/confereResposta/:numeroId', (req, res) => {
+        app.post('/confereResposta/:numeroId/:nivel', (req, res) => {
 
-           Respostas.find({numeroId : req.params.numeroId}, (erro, collection) => {
+           Respostas.find({numeroId : req.params.numeroId, nivel: req.params.nivel}, (erro, collection) => {
                 if (erro) {
                     return res.send(erro);
                 }
